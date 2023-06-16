@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Qs</title>
+</head>
+<body>
+    <!-- question 1 -->
+    <table border="black">
+        <caption>Student Information</caption>
+        <tr>
+            <td rowspan="6">Info</td>
+            <td rowspan="2">Name</td>
+            <td colspan="2">Address </td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>House</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Puna</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <br><br><hr>
+
+    <!-- Question 2 -->
+    <form action="/submit">
+    <label for="name">Name : </label>
+    <input type="text" placeholder="Name" id="name"> <br>
+    <div>
+        Sex :
+        <input type="radio" id="sex" name="gender" value="male">
+        <label for="sex">Male</label>
+        <input type="radio" id="sex" name="gender" value="Female">
+        <label for="sex">FeMale</label>
+</div> <br>
+<label for="country">Country : </label>
+<select name="state"  id="country">
+    <option value="">Select an Option</option>
+    <option value="Up">Up</option>
+    <option value="Gonda">Gonda</option>
+</select>
+<br> <br>
+<label for="msg">Message :</label> <br>
+<textarea name="text" id="msg"></textarea> <br>
+
+<input type="checkbox" name="check" id="sub"  >
+<label for="sub">subcribe ?</label>
+<br>
+<button>Submit</button>
+
+</form>
+</body>
+</html>
