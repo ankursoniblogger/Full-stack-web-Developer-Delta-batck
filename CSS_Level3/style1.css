@@ -1,0 +1,28 @@
+/* question 1  */
+/* div{
+    height: 150px;
+    width: 300px;
+    background-color: gray;
+    border: 5px dotted black;
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-left: 2em;
+    padding: 1em;
+} */
+
+/* quetion 2  */
+
+/* div{
+    height: 100px ;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+} */
+
+div ul li {
+
+    /* display: list-item; */
+    display: inline;
+}
