@@ -1,0 +1,42 @@
+/* .container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 50px;
+
+} */
+
+/* question 2 
+ */
+nav{
+height: 50px ;
+width: 900px ;
+border: 2px solid rgb(47, 255, 196);
+background-color: rgba(214, 155, 99, 0.89);
+
+
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+ nav ul li {
+    list-style: none;
+    padding: 0 20px ;
+    font-size: 24px;
+}
