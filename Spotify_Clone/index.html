@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for everyone</title>
+<!-- favicon  -->
+    <link rel="icon" type="image/x-icon" href="/Spotify_Clone/assects/logo.png">
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                   <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                   <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library ">
+                <div class="option ">
+                    <div class="lib-option nav-option">
+                        <img src="./assects/library_icon.png" alt="">
+                        <a href="#">Library</a>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist </p>
+                        <p class="box-p2">It's eassy, We'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podecast to follow</p>
+                        <p class="box-p2">We'll keep update on new episode</p>
+                        <button class="badge">Broweser podecast</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main content  -->
+        <div class="main-content">
+            <!-- sticky nav  -->
+            <div class="sticky-nav">
+                <div class="sticky-nav-icon">
+                    <img src="./assects/backward_icon.png" alt="">
+                    <img src="./assects/forward_icon.png" class="hide" alt="">
+                </div>
+                <div class="sticky-nav-option">
+                    <button class="badge nav-badge hide">Explore premium</button>
+                    <button class="badge dark-badge nav-badge"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-badge"></i>
+                </div>
+            </div>
+            <!-- cards  -->
+                      <!-- 1st layout card  -->
+            <h2>Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assects/card1img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                </div>
+                 <!-- 2nd layout  -->
+                <h2>Focus  </h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assects/card15img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Peacefull piano</p>
+                        <p class="card-info">Peacefull piano to help you slow down breath..</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card16img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Deep Focus</p>
+                        <p class="card-info">Keep calm and focus with ambient and rock.. </p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card17img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Instrumental Study</p>
+                        <p class="card-info">Focus with Soft study music ... </p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card18img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Focus Flow</p>
+                        <p class="card-info">Uptempo instrumental hip hop beats ... </p>
+                    </div>
+                </div>
+                 <!-- 3rd layout  -->
+                <h2>Trandind now year today</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assects/card2img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Mahiye  jinna sohna</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card3img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Mere Pass tum Ho..</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card4img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Naa Ready</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card3img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Mere pass Tum Ho</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                </div>
+                
+                 <!-- 4th layout  -->
+                <h2>Sound of India </h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assects/card12img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Sound of Mumbai</p>
+                        <p class="card-info">Songs that distinguish Mumbai.. </p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card11img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Sound of Kolkata</p>
+                        <p class="card-info">Songs that distinguish Mumbai.. </p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card13img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Sound of Delhi</p>
+                        <p class="card-info">Songs that distinguish Mumbai.. </p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card14img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Sound of Bangalure... &hearts;</p>
+                        <p class="card-info">Songs that distinguish Mumbai.. </p>
+                    </div>
+                </div>
+
+                 <!-- 5th layout card  -->
+
+                <h2>Feature chart</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assects/card5img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card6img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Top 50 - India</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card1img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assects/card5img.jpeg" class="card-img" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily update of the most played &hearts;..</p>
+                    </div>
+                </div>
+                <footer>
+                    <div class="line"></div>
+                </footer>
+        </div>
+
+        <!-- last div music player  -->
+        <div class="music-player">
+            <div class="album">
+                <img src="./homework/album_picture.jpeg" alt="" class="album-picture">
+                <div class="album-text">
+                    <p class="album-title">Daylight</p>
+                    <p class="album-text-para">Davil kuswara</p>
+                </div>
+                <div>
+                <img src="./homework/album_icon1.png" alt="" class="album-icon">
+                <img src="./homework/album_icon2.png" alt="" class="album-icon">
+               </div>
+            </div>
+
+            <div class="player">
+                <div class="player-control">
+                    <img src="./assects/player_icon1.png" class="player-control-icon">
+                    <img src="./assects/player_icon2.png" class="player-control-icon">
+                    <img src="./assects/player_icon3.png" class="player-control-icon large-player">
+                    <img src="./assects/player_icon4.png" class="player-control-icon">
+                    <img src="./assects/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range"  min="0" max="100" step="1" class="progress-bar">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <img src="./homework/controls_icon1.png" alt="" class="control-icon">
+                <img src="./homework/controld_icon2.png" alt="" class="control-icon">
+                <img src="./homework/controls_icon3.png" alt="" class="control-icon control-icon-small">
+                <img src="./homework/controls_icon4.png" alt="" class="control-icon control-icon-small">
+                <img src="./homework/controls_icon5.png" alt="" class="control-icon">
+                <input type="range"  min="0" max="100" step="1" class="progress-bar control-progress-bar">
+
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
