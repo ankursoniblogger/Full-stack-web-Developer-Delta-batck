@@ -97,3 +97,56 @@ let month = ["january" , "july" , "march", "augest"];
 let cars = ["maruti", "xuv", "toyota", "farri" ];
 
 // console.log(cars);
+
+// let num = [ [1,2], [3,4], [5,6]];
+
+// practice question part 3 
+// nesting array 
+
+let game = [ ["X" , null , "O"], [null, "X" , null], ["O" , null , "X"] ];
+
+
+// Assignment question part 3 
+
+let arr = [7,9,0 ,-2];
+let n = 3;
+
+let ans = arr.slice(0,n);
+// console.log(ans);
+
+let ans2 = arr.slice(arr.length-n);
+// console.log(ans2);
+
+// question 3 Write a js program to check string are empty are not 
+/*
+let str = "";
+let str1 = str.trim();
+if(str1.length == 0){
+    console.log("String are empty");
+} else{
+    console.log("string are not empty");
+}
+*/
+
+// if(str == ""){
+//    console.log("string is empty");
+// } else if(str == " "){
+//     console.log("String is empty but space are given");
+// }
+//  else{
+//     console.log("string are not empty");
+// }
+
+
+
+// question 4 
+
+
+let str = "ApNaCollege";
+let char = 5;
+
+if(str[char] == str[char].toLowerCase()){
+    console.log("Character is lower case");
+} else{
+    console.log("character is not lower case");
+}
