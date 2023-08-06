@@ -150,3 +150,34 @@ if(str[char] == str[char].toLowerCase()){
 } else{
     console.log("character is not lower case");
 }
+
+
+// javaScript part-4 
+
+// print odd number 
+ /*for(let i = 1; i<=15; i++){
+    if(i % 2 != 0){
+        console.log(i);
+    }
+ }*/
+
+// 2nd method 
+for(let i=1; i<=15;i=i+2){
+    // console.log(i);
+}
+
+// print all even number from 2 to 10 
+for(let i=2;i<=10;i=i+2){
+    // console.log(i);
+}
+
+// print multiple table of 5
+for(let i=5;i<=50;i=i+5){
+    // console.log(i);
+}
+
+// let x = prompt("Enter a number :) ");
+// x = parseInt(x);
+// for(let i=x;i<=x*10;i=i+x){
+    // console.log(i);
+// }
