@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram page layout</title>
+</head>
+<link rel="stylesheet" href="/style.css">
+<body>
+    <h2>This page belong to @<%= data.name %> </h2>
+    <button>Follow</button>
+    <button>Messege :</button>
+<br>
+
+    <p>
+     Followers:    <%= data.followers %>  &nbsp &nbsp
+     Following :  <%= data.following %>
+    </p>
+
+    <hr>
+
+   <% for(post of data.posts){ %>
+    <img src=" <%= post.image %>" alt="some img">
+    <p>
+        Like: <%=post.likes %> &nbsp <%= post.comments %>
+    </p>
+
+  <%  } %>
+
+    
+
+</body>
+</html>
+
+
+<!-- loop ke liye yeh tag hota hain  ( <%  %>)  and verable ke liye (<%=  %> )-->
