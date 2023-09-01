@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: brown;
+    text-align: center;
+
+}
+/* body{
+    display: flex;
+} */
+
+div{
+    margin: 20px 50px 0 30px;
+    display: inline-block;
+
+
+}
+.post{
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    padding-left: 20px;
+
+}
+.user{
+    color: purple;
+    padding: 20px 10px;
+    font-size: 30px;
+    font-style: italic;
+}
+.content{
+    color: rgb(26, 27, 24);
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+.btn{
+font-size: 18px;
+text-decoration: none;
+}
+/* a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+} */
