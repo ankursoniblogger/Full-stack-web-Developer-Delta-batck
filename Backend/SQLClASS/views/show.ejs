@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show user </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<!-- <style>
+    table{
+        margin: 0 auto;
+    }
+    table,th,td{
+        border: 1px solid black;
+    }
+    table tr th {
+        font-size: 30px;
+    }
+</style> -->
+<body>
+    
+    <table>
+        <tr>
+            <th>id</th>
+            <th>username</th>
+            <th>email</th>
+            <th>Edit</th>
+            <th>✖</th>
+        </tr>
+        <% for(user of users) { %>
+
+            <tr>
+                <td> <%= user.id %></td>
+                <td> <%=user.username %></td>
+                <td> <%= user.email %></td>
+                <td>
+                    <form method="get" action="/user/<%= user.id %>/edit ">
+                        <button>Edit username 🔥</button>
+                    </form>
+                </td>
+                <td>
+                    <!-- 🔥 1st method jisme pass magta hain -->
+                    <form method="get" action="/user/<%=user.id%>/delete">
+                        <button>Delete ✖</button>
+                      </form>
+
+
+                      <!-- 🔥 2nd method jisme kuch nai magta  -->
+                      <!-- <form method="post" action="/user/<%=user.id%>?_method=DELETE">
+                        <button>Delete </button>
+                    </form> -->
+
+                </td>
+            </tr>
+        <% } %>
+    </table>
+
+<div>
+   <a href="http://localhost:3000/user/new"> Crate A new post</a>
+</div>
+</body>
+</html>
+
