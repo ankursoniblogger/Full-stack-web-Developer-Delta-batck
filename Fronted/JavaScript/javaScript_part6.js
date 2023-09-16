@@ -1,4 +1,4 @@
-console.log("hello world! ");
+console.log("hello world! . Welcome to javaScript Part 6 . Ankur soni");
 
 function printPoem(){
     console.log("Twinkle Twinkle litlis start ");
@@ -87,3 +87,92 @@ function getSum(n){
 // }
 
 // console.log(getRandom(122))
+
+
+
+// question no 1 
+
+let arr = [2,4,6,1,4,5,2,77,9,4,10];
+let num = 5;
+
+function getElement (){
+    for(let i=0;i<=arr.length;i++){
+        if(arr[i] > num){
+            console.log(arr[i])
+        }
+    }
+}
+// getElement();
+
+// Qs2.
+// let str = "abcdefghialksa";
+
+// function ectract(str){
+//     let ans = "";
+//     for(let i=0;i<=str.length;i++){
+//         let currChar = str[i];
+//         // console.log(currChar)
+//         if(ans.indexOf(currChar) == -1){
+//             ans += currChar
+//         }
+//     }
+//     return ans;
+// }
+// // ectract(str);
+// // console.log(ectract(str))
+
+// Qs3 
+
+let country = ["india", "australia" , "Usa", "brazil"];
+
+function longCountry(){
+    let ansInd = 0;
+    for(let i=0;i<country.length;i++){
+        // console.log(country[i])
+        // console.log(country[ansInd].length)
+        let ansLen = country[ansInd].length;
+        let currLen = country[i].length;
+        if(currLen> ansLen){
+            ansInd = i;
+        }
+    }
+    return country[ansInd];
+}
+
+// let res = longCountry();
+// console.log(res);
+
+// Qs 4
+
+let str = "apnacollegeeee";
+
+function countVowels(){
+    let count = 0;
+    for(let i=0;i<=str.length; i++){
+        console.log(str[i])
+
+        if(
+            str.charAt(i) == "a" ||  str.charAt(i) == "e" ||  str.charAt(i) == "i" ||  str.charAt(i) == "o" ||  str.charAt(i) == "u"
+        ) {
+             count++;
+        }
+
+    }
+    return count
+}
+
+//  let res = countVowels()
+//  console.log(res)
+
+// Qs5 
+
+let start = 100;
+let end = 200;
+
+function range(){
+    let diff = end - start;
+  let random = Math.floor((Math.random()*diff) + start)
+  console.log(random)
+}
+
+// range()
