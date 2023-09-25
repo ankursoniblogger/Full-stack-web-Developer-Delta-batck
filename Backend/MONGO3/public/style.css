@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    background-color: #B0D9B1;
+    height: 70px;
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.box1 h1{
+    color: black;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 10px 30px;
+
+}
+
+.box1 form {
+    position: absolute;
+    right: 70px;
+    top: 12px;
+    text-align: center;
+}
+
+.box1 form button{
+    padding: 12px 35px;
+    /* background-color: #B0D9B1; */
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 15px ;
+     border: 0;
+     letter-spacing: 2px;
+
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.chat{
+    background-color: #D0E7D2;
+    height: 260px ;
+    width: 320px;
+    border-radius: 13px ;
+    text-align: center;
+    margin: 20px 30px;
+}
+
+.send-recived{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    padding: 19px 0;
+    font-family: monospace;
+
+}
+
+
+.msg{
+    /* border: 2px solid red ; */
+    height: 130px;
+    position: relative;
+}
+.msg p {
+ margin: 10px;
+    text-align: start;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+/* .chat .from{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px ;
+} */
+
+
+
+
+/* .msg{
+    background-color: blue;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 20px;
+} */
+
+.edit-delete{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 5px;
+
+}
+
+.edit-delete form{
+    padding: 0 25px;
+
+    
+    
+}
+.edit-delete form button{
+    font-family: monospace;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 0;
+    background-color:#B0D9B1;
+    font-size: 15px;
+    font-weight: 600;
+    /* color: rgb(7, 5, 5); */
+}
+/* 
+.edit-delete form button i{
+    color: red;
+} */
+
+.time{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 19px;
+}
+

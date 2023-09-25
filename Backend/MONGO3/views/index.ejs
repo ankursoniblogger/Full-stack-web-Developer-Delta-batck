@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini whatshapp</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class="box1">
+    <h1>Chat Website 🧑🏽‍💻 </h1>
+
+    <!-- create new chat -->
+    <form action="/chats/new" method="get"> 
+      <button>New Chat </button>
+    </form> 
+  </div>
+
+
+
+<div class="container">
+    <!-- container  -->
+   <% for( let chat of chats){ %>
+
+
+ <div class="chat">
+
+  <div class="send-recived">
+    <p class="from">Send: <b><%= chat.from %> </b></p>
+    <p>Recived By:  <b><%= chat.to %> </b></p>
+  </div> <hr>
+
+
+    <div class="msg">
+    <p> <b>Msg:</b> <%= chat.msg %></p>
+
+ <!-- edit and delete route -->
+    <div class="edit-delete">
+
+    <form action="/chats/<%= chat._id %>/edit" method="get">
+      <button >Edit</button>
+    </form>
+
+    <form action="/chats/<%= chat._id %>?_method=DELETE" method="post">
+      <button class="delete"> Delete <i class="fa-regular fa-trash-can"></i></button>
+    </form>
+  </div>
+  
+    </div>
+    <hr>
+    <div class="time">
+    <p><b> Time:</b>  <%= chat.created_at.toString().split(" ")[4] %>  </p>
+    <p><b> Date: </b> <%= chat.created_at.toString().split(" ").slice(1,4).join("-") %></p>
+  </div>
+    </div>
+  <%  } %>
+</div>
+
+</body>
+</html>
+
