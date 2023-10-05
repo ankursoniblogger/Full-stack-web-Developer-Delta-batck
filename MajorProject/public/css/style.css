@@ -193,3 +193,9 @@ font-weight: 400 !important;
      margin-bottom: 2em;
     }
   }
+
+  @media only screen and (max-width: 510px) {
+    .heading , .show-heading{
+        text-align: center;
+    }
+  }
