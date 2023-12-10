@@ -1,0 +1,10 @@
+.info{
+    text-align: center;
+    width: 100%;
+}
+
+.card-container{
+    /* display: flex; */
+    margin-left: 50em;
+}
+
